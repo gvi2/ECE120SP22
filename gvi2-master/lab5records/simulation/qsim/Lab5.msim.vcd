@@ -1,0 +1,302 @@
+$comment
+	File created using the following command:
+		vcd file Lab5.msim.vcd -direction
+$end
+$date
+	Thu Mar 10 00:00:51 2022
+$end
+$version
+	ModelSim Version 10.6d
+$end
+$timescale
+	1ps
+$end
+
+$scope module Lab7Extension_vlg_vec_tst $end
+$var reg 1 ! CLK $end
+$var reg 1 " T $end
+$var reg 1 # rst $end
+$var reg 1 $ set $end
+$var wire 1 % A $end
+$var wire 1 & P $end
+$var wire 1 ' s0 $end
+$var wire 1 ( s1 $end
+$var wire 1 ) s2 $end
+
+$scope module i1 $end
+$var wire 1 * gnd $end
+$var wire 1 + vcc $end
+$var wire 1 , unknown $end
+$var tri1 1 - devclrn $end
+$var tri1 1 . devpor $end
+$var tri1 1 / devoe $end
+$var wire 1 0 A~pad_padout $end
+$var wire 1 1 A~padSIMOUT $end
+$var wire 1 2 s1~pad_padout $end
+$var wire 1 3 s1~padSIMOUT $end
+$var wire 1 4 s2~pad_padout $end
+$var wire 1 5 s2~padSIMOUT $end
+$var wire 1 6 s0~pad_padout $end
+$var wire 1 7 s0~padSIMOUT $end
+$var wire 1 8 P~pad_padout $end
+$var wire 1 9 P~padSIMOUT $end
+$var wire 1 : set~pad_padout $end
+$var wire 1 ; rst~pad_padout $end
+$var wire 1 < CLK~pad_padout $end
+$var wire 1 = T~pad_padout $end
+$var wire 1 > ~ALTERA_DATA0~~padout $end
+$var wire 1 ? ~ALTERA_DATA0~~ibuf_o $end
+$var wire 1 @ set~input_o $end
+$var wire 1 A rst~input_o $end
+$var wire 1 B inst2~1_combout $end
+$var wire 1 C CLK~input_o $end
+$var wire 1 D CLK~inputCLKENA0_outclk $end
+$var wire 1 E T~input_o $end
+$var wire 1 F inst~1_combout $end
+$var wire 1 G inst2~0_combout $end
+$var wire 1 H inst~_emulated_q $end
+$var wire 1 I inst~0_combout $end
+$var wire 1 J nslinst7~combout $end
+$var wire 1 K inst2~3_combout $end
+$var wire 1 L inst2~_emulated_q $end
+$var wire 1 M inst2~2_combout $end
+$var wire 1 N nslnst5~combout $end
+$var wire 1 O inst1~1_combout $end
+$var wire 1 P inst1~_emulated_q $end
+$var wire 1 Q inst1~0_combout $end
+$var wire 1 R inst37~0_combout $end
+$var wire 1 S inst26~combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+1#
+0$
+0%
+0&
+1'
+1(
+1)
+0*
+1+
+x,
+1-
+1.
+1/
+z0
+z1
+z2
+z3
+z4
+z5
+z6
+z7
+z8
+z9
+z:
+z;
+z<
+z=
+z>
+z?
+0@
+1A
+1B
+0C
+0D
+0E
+1F
+1G
+0H
+1I
+0J
+1K
+0L
+1M
+0N
+1O
+0P
+1Q
+0R
+0S
+$end
+#5000
+1$
+1@
+0G
+#15000
+1"
+1E
+0F
+#20000
+1!
+1C
+1D
+1P
+1L
+0M
+0Q
+1N
+0'
+0(
+1R
+1%
+0O
+#25000
+0"
+0!
+0E
+0C
+0D
+1F
+#35000
+1"
+1E
+0F
+#40000
+1!
+1C
+1D
+0P
+1Q
+1(
+0R
+0%
+#45000
+0"
+0!
+0E
+0C
+0D
+1F
+#55000
+1"
+1E
+0F
+#60000
+1!
+1C
+1D
+#65000
+0"
+0!
+0E
+0C
+0D
+1F
+#80000
+1!
+1C
+1D
+1H
+0I
+0N
+0)
+1S
+1R
+1&
+1%
+1O
+#85000
+0!
+0C
+0D
+#100000
+1!
+1C
+1D
+1P
+0Q
+1J
+0(
+0S
+0&
+0K
+#105000
+0!
+0C
+0D
+#120000
+1!
+1C
+1D
+0L
+1M
+1'
+0R
+0%
+#125000
+0!
+0C
+0D
+#135000
+1"
+1E
+0F
+#140000
+1!
+1C
+1D
+0H
+1I
+0J
+1)
+1S
+1R
+1&
+1%
+1K
+#145000
+0"
+0!
+0E
+0C
+0D
+1F
+#160000
+1!
+1C
+1D
+1L
+1H
+0I
+0M
+1J
+0)
+0'
+0S
+0&
+0K
+#165000
+0!
+0C
+0D
+#175000
+1"
+1E
+0F
+#180000
+1!
+1C
+1D
+0L
+0H
+1I
+1M
+0J
+1)
+1'
+1S
+1&
+1K
+#185000
+0"
+0!
+0E
+0C
+0D
+1F
+#200000

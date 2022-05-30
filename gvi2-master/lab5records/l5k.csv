@@ -1,0 +1,6 @@
+"""Karnaugh map for A
+	(s0)(s1)	"""
+
+s2, 00, 01, 11, 10
+0,  1,   1,null, 1
+1,  1,   0,null, 1

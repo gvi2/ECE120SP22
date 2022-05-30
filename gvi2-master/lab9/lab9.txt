@@ -1,0 +1,9 @@
+QUESTION 1.  Read through the program lab9.bin. What do you expect the program to do? More specifically, which register will the program modify when it is run, and what will it contain when the program finishes? (You can probably figure this out merely by reading the comments provided in lab9.bin.)
+
+ANSWER: The program specifically takes a cleared register 2 and adds the decimal number 12 (or 000C in Hexadecimal) to the value of R2, then storing R2 as the sum of that value before the program ends.
+
+
+QUESTION 2.  Explain in a few sentences why the ability to step through a program (run one instruction at a time) is a very useful tool for debugging a program. Debugging is the process of finding and correcting bugs (or errors) in a program. Hint: Finding a bug is often much more difficult than correcting it.
+
+ANSWER: The ability to step through a program one instruction at a time is a very useful tool for debugging a program as it allows for the reader to directly trace the value of each register through each instruction respectively, thus pointing out any semantic errors caused by a specific instruction. 
+

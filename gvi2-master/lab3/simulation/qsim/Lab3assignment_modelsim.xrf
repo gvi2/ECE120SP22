@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, /home/gvi2/ece120/lab3/Lab3assignment.bdf
+source_file = 1, /home/gvi2/ece120/lab3/Lab3AssignmentWavform.vwf
+design_name = Lab3assignment
+instance = comp, \Cout~output , Cout~output, Lab3assignment, 1
+instance = comp, \s~output , s~output, Lab3assignment, 1
+instance = comp, \A~input , A~input, Lab3assignment, 1
+instance = comp, \B~input , B~input, Lab3assignment, 1
+instance = comp, \Cin~input , Cin~input, Lab3assignment, 1
+instance = comp, \inst3~0 , inst3~0, Lab3assignment, 1
+instance = comp, \inst18~0 , inst18~0, Lab3assignment, 1

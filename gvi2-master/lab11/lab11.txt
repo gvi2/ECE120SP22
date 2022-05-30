@@ -1,0 +1,30 @@
+Question 1: Describe the errors that occur when trying to assemble lab11.asm. Identify the cause of each error.
+
+14: illegal oprands for missing opcode // This means that the program is missing the instruction statement and is reading x3000 as an opcode. The error is fixed by writing the psuedoinstruction .ORIG before x3000 to indicate the start of the program in memory
+16: instruction appears before .ORIG // Similar to the response above, this syntax error occurs whenever there is no .ORIG psuedoinstruction to define the start of the program in memory to store the instructions at
+17: constant oustide of allowed range // PCOfset is outside of bounds as it takes PC at x3002 and adds x3010, which is outside of the memory range in the LC3. Therefore, the LD instruction is fixed by loading it from memory of label NEG, which is stored at x3010
+19: illegal operands for ADD // This was a typo of an extra comma that was removed
+30: constant outside of allowed range // Similar issue with 17, the offset was labelled as a memory location that resulted in an effective address that was out of memory bounds. This was solved by referencing label ZERO, which refers to corresponding memory location x300F.
+32: label OUTERLOOP has already appeared // This is actually caused by a typo with the BR instruction, instead of writing BRzp the instruction states BRpz, which is not an assembler instruction and is thus skipped, having the compiler read the argument as the definition of the label OUTERLOOP again. Rewriting the instructionas BRzp fixes the problem.
+35: constant outside of allowed range // Again, the same issue with the PCOffset argument of the ST instruction being written as the effective address of the value of memory to be stored (not quite that either). Therefore, we solve this issue by using the RESULT label to refer to psuedoinstruction with address x3011. 
+**Additionally, the line above and the referenced line had two semantic errors:
+	1) The ST function will not work for the label in this case, as it will only store the memory of label RESULT as the value of the result. Therefore, the STI function must be used in order to store the result in the effective address referenced in the RESULT label.
+	2) Furthermore, the value of the RESULT label is not correct if we wanted to store the result in the correct effective address. Therefore, it was changed from x0000 to x30FF
+43: no .END directive found // This simply means that the pseudoinstruction .END marking the end of the instruction is missing at the end of the instruction, which is solved by just writing .END on line 43 after all of the label values and comments.
+
+Question 2: For each label in the code (with all bugs fixed), write down the corresponding memory location. 
+
+MLocation	Label		Instruction
+x300E 		INPUT 		.FILL x0005	; Input for X!, in this case is 
+x300F 		ZERO  		.FILL x0000	; //Added label ZERO
+x3010 		NEG   		.FILL xFFFF	; 2's complement of 1 (i.e. -1) Added label NEG
+x3011 		RESULT		.FILL x30FF	; At program completion, the result is to store in X30FF //Added label RESULT
+
+Question 3: Between using labels and explicit memory locations/offsets, which one makes the most sense, and why?
+
+<<<<<<< HEAD
+The use of labels is the most practical in assembly when you are debugging/modifying the programs by adding or removing instructions as the label value does not need to be modified when loading or storing memory to/from registers. Location and offsets, however, need to be changed with the change in PC for the line of each instruction, thus making it less practical when adding additional instructions.
+=======
+
+
+>>>>>>> release/master

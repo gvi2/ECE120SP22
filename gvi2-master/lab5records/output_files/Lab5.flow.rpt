@@ -1,0 +1,143 @@
+Flow report for Lab5
+Thu Mar 10 00:00:49 2022
+Quartus Prime Version 18.1.1 Build 263 12/14/2018 SJ Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Parallel Compilation
+  2. Legal Notice
+  3. Flow Summary
+  4. Flow Settings
+  5. Flow Non-Default Global Settings
+  6. Flow Elapsed Time
+  7. Flow OS Summary
+  8. Flow Log
+
+
+
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 8      ;
+; Maximum used               ; 8      ;
++----------------------------+--------+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++--------------------------------------------------------------------------+
+; Flow Summary                                                             ;
++-----------------------------+--------------------------------------------+
+; Flow Status                 ; Successful - Thu Mar 10 00:00:49 2022      ;
+; Quartus Prime Version       ; 18.1.1 Build 263 12/14/2018 SJ Pro Edition ;
+; Revision Name               ; Lab5                                       ;
+; Top-level Entity Name       ; Lab7Extension                              ;
+; Family                      ; Cyclone 10 GX                              ;
+; Device                      ; 10CX220YF780I5G                            ;
+; Timing Models               ; Final                                      ;
+; Logic utilization (in ALMs) ; 6 / 80,330 ( < 1 % )                       ;
+; Total registers             ; 3                                          ;
+; Total pins                  ; 9 / 340 ( 3 % )                            ;
+; Total virtual pins          ; 0                                          ;
+; Total block memory bits     ; 0 / 12,021,760 ( 0 % )                     ;
+; Total DSP Blocks            ; 0 / 192 ( 0 % )                            ;
+; Total HSSI RX channels      ; 0 / 12 ( 0 % )                             ;
+; Total HSSI TX channels      ; 0 / 12 ( 0 % )                             ;
+; Total PLLs                  ; 0 / 30 ( 0 % )                             ;
++-----------------------------+--------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 03/09/2022 23:57:58 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; Lab5                ;
++-------------------+---------------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                       ;
++--------------------------+------------------------------+---------------+-------------+----------------+
+; Assignment Name          ; Value                        ; Default Value ; Entity Name ; Section Id     ;
++--------------------------+------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID    ; 345052715395.164689187800513 ; --            ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT   ; Vhdl                         ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL      ; ModelSim-Altera (VHDL)       ; <None>        ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP   ; 100                          ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP   ; -40                          ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY ; output_files                 ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY         ; Lab7Extension                ; Lab5          ; --          ; --             ;
++--------------------------+------------------------------+---------------+-------------+----------------+
+
+
++-----------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                 ;
++--------------------+--------------+-------------------------+---------------------+
+; Module Name        ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ;
++--------------------+--------------+-------------------------+---------------------+
+; Synthesis          ; 00:00:02     ; 1.0                     ; 1330 MB             ;
+; Fitter             ; 00:01:32     ; 1.0                     ; 4671 MB             ;
+; Timing Analyzer    ; 00:00:12     ; 1.0                     ; 2785 MB             ;
+; Assembler          ; 00:00:17     ; 2.4                     ; 2676 MB             ;
+; EDA Netlist Writer ; 00:00:04     ; 1.0                     ; 1500 MB             ;
+; EDA Netlist Writer ; 00:00:03     ; 1.0                     ; 1483 MB             ;
+; EDA Netlist Writer ; 00:00:04     ; 1.0                     ; 1484 MB             ;
+; Total              ; 00:02:14     ; --                      ; --                  ;
++--------------------+--------------+-------------------------+---------------------+
+
+
++---------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                             ;
++--------------------+---------------------------+--------------+------------+----------------+
+; Module Name        ; Machine Hostname          ; OS Name      ; OS Version ; Processor type ;
++--------------------+---------------------------+--------------+------------+----------------+
+; Synthesis          ; linux-02.ews.illinois.edu ; CentOS Linux ; 7          ; x86_64         ;
+; Fitter             ; linux-02.ews.illinois.edu ; CentOS Linux ; 7          ; x86_64         ;
+; Timing Analyzer    ; linux-02.ews.illinois.edu ; CentOS Linux ; 7          ; x86_64         ;
+; Assembler          ; linux-02.ews.illinois.edu ; CentOS Linux ; 7          ; x86_64         ;
+; EDA Netlist Writer ; linux-02.ews.illinois.edu ; CentOS Linux ; 7          ; x86_64         ;
+; EDA Netlist Writer ; linux-02.ews.illinois.edu ; CentOS Linux ; 7          ; x86_64         ;
+; EDA Netlist Writer ; linux-02.ews.illinois.edu ; CentOS Linux ; 7          ; x86_64         ;
++--------------------+---------------------------+--------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_syn --read_settings_files=on --write_settings_files=off Lab5 -c Lab5
+quartus_syn --read_settings_files=on --write_settings_files=off Lab5 -c Lab5
+quartus_fit --read_settings_files=on --write_settings_files=off Lab5 -c Lab5
+quartus_sta Lab5 -c Lab5 --mode=finalize
+quartus_asm --read_settings_files=on --write_settings_files=off Lab5 -c Lab5
+quartus_eda --read_settings_files=on --write_settings_files=off Lab5 -c Lab5
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Lab5 -c Lab5 --vector_source=/home/gvi2/ece120/lab5records/Lab7ExtWav.vwf --testbench_file=/home/gvi2/ece120/lab5records/simulation/qsim/Lab7ExtWav.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/gvi2/ece120/lab5records/simulation/qsim/ Lab5 -c Lab5
+
+
+
